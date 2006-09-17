@@ -2,12 +2,12 @@ package DateTime::Format::DateParse;
 
 # Copyright (C) 2005-6  Joshua Hoblitt
 #
-# $Id: DateParse.pm 3514 2006-09-17 19:41:09Z jhoblitt $
+# $Id: DateParse.pm 3517 2006-09-17 23:10:10Z jhoblitt $
 
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use DateTime;
 use DateTime::TimeZone;

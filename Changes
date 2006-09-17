@@ -1,5 +1,8 @@
 Revision history for Perl module DateTime::Format::DateParse
 
+0.04 Sun Sep 17 13:10:19 HST 2006
+    - fix a bug in Build.pl
+
 0.03 Sun Sep 17 09:41:16 HST 2006
     - rt.cpan.org #21540]: Make sure that the test format & epoch time are
       compared in the same time zone.  This fixes the issue with the epoch time

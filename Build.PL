@@ -7,7 +7,7 @@ Module::Build->new(
     license             => 'perl',
     create_makefile_pl  => 'passthrough',
     create_readme       => 1,
-    require             => {
+    requires            => {
         'DateTime'              => '0.29',
         'DateTime::TimeZone'    => '0.27',
         'Date::Parse'           => '2.27',
