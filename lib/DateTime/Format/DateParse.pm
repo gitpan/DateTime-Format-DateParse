@@ -1,13 +1,13 @@
 package DateTime::Format::DateParse;
 
-# Copyright (C) 2005  Joshua Hoblitt
+# Copyright (C) 2005-6  Joshua Hoblitt
 #
-# $Id: DateParse.pm,v 1.4 2005/07/26 03:28:43 jhoblitt Exp $
+# $Id: DateParse.pm 3514 2006-09-17 19:41:09Z jhoblitt $
 
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use DateTime;
 use DateTime::TimeZone;

@@ -1,11 +1,17 @@
 ---
 name: DateTime-Format-DateParse
-version: 0.02
-author: ~
-abstract: ~
+version: 0.03
+author:
+  - 'Joshua Hoblitt (JHOBLITT) <jhoblitt@cpan.org>'
+abstract: Parses Date::Parse compatible formats
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 provides:
   DateTime::Format::DateParse:
     file: lib/DateTime/Format/DateParse.pm
-    version: 0.02
-generated_by: Module::Build version 0.2611
+    version: 0.03
+generated_by: Module::Build version 0.28
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
