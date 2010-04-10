@@ -1,5 +1,10 @@
 Revision history for Perl module DateTime::Format::DateParse
 
+0.05
+    - test warning fix
+    - Nanoseconds are always turned into an integer, with rounding as
+      needed. (Dave Rolsky)
+
 0.04 Sun Sep 17 13:10:19 HST 2006
     - fix a bug in Build.pl
 

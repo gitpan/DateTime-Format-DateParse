@@ -2,12 +2,12 @@ package DateTime::Format::DateParse;
 
 # Copyright (C) 2005-6  Joshua Hoblitt
 #
-# $Id: DateParse.pm 3517 2006-09-17 23:10:10Z jhoblitt $
+# $Id: DateParse.pm 4429 2010-04-10 19:14:33Z jhoblitt $
 
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use DateTime;
 use DateTime::TimeZone;
@@ -31,7 +31,13 @@ sub parse_datetime {
     my %p;
     if ( $ss ) {
         my $fraction = $ss - int( $ss );
-        $p{ nanosecond } = $fraction * 1e9 if $fraction;
+        if ($fraction) {
+            my $nano = $fraction * 1e9;
+            if ( $nano != int( $nano ) ) {
+                $nano++ if $nano - int( $nano ) >= 0.5;
+            }
+            $p{ nanosecond } = int( $nano );
+        }
         $p{ second } = int $ss;
     }
     $p{ minute }    = $mm if $mm;
